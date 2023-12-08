@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "5d1aaea0-2d2c-4e04-a376-4b4e36edb14f",
+		"name": "Requisições",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29394667"
+	},
+	"item": [
+		{
+			"name": "Medico",
+			"item": [
+				{
+					"name": "Cadastro de Médico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"nome\": \"Carla Azevedo\",\r\n\"email\": \"carla.azevedo@voll.med\",\r\n\"crm\": \"123245\",\r\n\"especialidade\": \"CARDIOLOGIA\",\r\n\"telefone\": \"6999326032\",\r\n\"endereco\": {\r\n    \"logradouro\": \"rua 3\",\r\n    \"bairro\": \"bairro\",\r\n    \"cep\": \"12345428\",\r\n    \"cidade\": \"Ariquemes\",\r\n    \"uf\": \"RO\",\r\n    \"numero\": \"1\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/medicos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Médicos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Atualização de Médico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/medicos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Médico",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Paciente",
+			"item": [
+				{
+					"name": "Cadastro de Paciente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"nome\": \"Carla Azevedo\",\r\n\"email\": \"carla.azevedo@voll.med\",\r\n\"crm\": \"123245\",\r\n\"especialidade\": \"CARDIOLOGIA\",\r\n\"telefone\": \"6999326032\",\r\n\"endereco\": {\r\n    \"logradouro\": \"rua 3\",\r\n    \"bairro\": \"bairro\",\r\n    \"cep\": \"12345428\",\r\n    \"cidade\": \"Ariquemes\",\r\n    \"uf\": \"RO\",\r\n    \"numero\": \"1\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/medicos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Pacientes",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Atualização de Paciente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/medicos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Paciente",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
